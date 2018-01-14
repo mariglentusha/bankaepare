@@ -21,7 +21,6 @@
                 </tr>
                 <tr >
                     <td style="padding: 10px;"><input type = "checkbox"> view_roles</td>
-                    <td style="padding: 10px;"><input type = "checkbox"> add_roles</td>
                     <td style="padding: 10px;"><input type = "checkbox"> edit_roles</td>
                     <td style="padding: 10px;"><input type = "checkbox"> delete_roles</td>
                 </tr>
@@ -30,27 +29,6 @@
                     <td style="padding: 10px;"><input type = "checkbox"> add_posts</td>
                     <td style="padding: 10px;"><input type = "checkbox"> edit_posts</td>
                     <td style="padding: 10px;"><input type = "checkbox"> delete_posts</td>
-                </tr>
-            </table>
-            <table border="2px solid black" style="min-width:700px; margin: 10px; background-color: #fff;">
-                <th colspan="4" style="padding: 10px; background-color: #f2f2ef;"> User Privileges</th>
-                <tr >
-                    <td style="padding: 10px;"><input type = "checkbox"> view_users</td>
-                    <td style="padding: 10px;"><input type = "checkbox"> add_users</td>
-                    <td style="padding: 10px;"><input type = "checkbox"> edit_users</td>
-                    <td style="padding: 10px;"><input type = "checkbox"> delete_users</td>
-                </tr>
-                <tr >
-                    <td style="padding: 10px;"><input type = "checkbox">view_roles</td>
-                    <td style="padding: 10px;"><input type = "checkbox">add_roles</td>
-                    <td style="padding: 10px;"><input type = "checkbox">edit_roles</td>
-                    <td style="padding: 10px;"><input type = "checkbox">delete_roles</td>
-                </tr>
-                <tr >
-                    <td style="padding: 10px;"><input type = "checkbox">view_posts</td>
-                    <td style="padding: 10px;"><input type = "checkbox">add_posts</td>
-                    <td style="padding: 10px;"><input type = "checkbox">edit_posts</td>
-                    <td style="padding: 10px;"><input type = "checkbox">delete_posts</td>
                 </tr>
             </table>
         </div>
