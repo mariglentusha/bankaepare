@@ -36,7 +36,6 @@ class ExamsController extends Controller
         return redirect()->back()->with('success','Image Uploaded successfully.');
 
     }
-
     public function destroy($id) {
         Exam::find($id)->delete();
 

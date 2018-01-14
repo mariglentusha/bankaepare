@@ -37,6 +37,7 @@
       <!-- Right Side Of Navbar -->
       <ul class="nav navbar-nav navbar-right" style="margin-left: 12px;">
           <!-- Authentication Links -->
+
           @if (Auth::guest())
               <li><a href="/login">Login</a></li>
           @else
