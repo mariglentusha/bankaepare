@@ -54,10 +54,10 @@ Route::get('/moderator', function () {
     return view('homes');
 });
 
-Route::get('/users', function () {
+Route::get('/admin/users', function () {
     if (Auth::user() && Auth::user()->role != 1){
         $users = DB::table('users')->get();
         return view( 'list', ['users' => $users]);
     }
-});
+})->name('users');;
 

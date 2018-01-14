@@ -14,8 +14,8 @@
             <table border="2px solid black" style="min-width:700px; margin: 10px; background-color: #fff;">
                 <th colspan="2" style="padding: 10px; background-color: #f2f2ef;"> Admin Privileges</th>
                 <tr >
-                    <td style="padding: 10px;" onclick="window.location='{{ url("/users") }}'"> View all users </td>
-                    <td style="padding: 10px;"> Add user </td>
+                    <td style="padding: 10px;"> <a href="{{ route('users') }}"> View all users </a> </td>
+                    <td style="padding: 10px;"> <a href="{{ route('users') }}"> Add user </a> </td>
                 </tr>
             </table>
         </div>

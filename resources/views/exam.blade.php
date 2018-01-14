@@ -1,5 +1,6 @@
 @extends('layouts.master')
 
+
 @section('content')
     <div class="col-12 col-md-9">
         <div class="row">
@@ -17,6 +18,9 @@
             <a href="#" class="list-group-item">Other solution</a>
             <a href="#" class="list-group-item">Earth is flat</a>
         </div>
+        @if (Auth::user() && Auth::user()->role != 1)
+            <a href="#" style = "margin: 10px auto; float:right;"> Delete Exam </a>
+        @endif
     </div><!--/span-->
 
 @endsection
