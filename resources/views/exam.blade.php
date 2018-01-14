@@ -18,4 +18,5 @@
             <a href="#" class="list-group-item">Earth is flat</a>
         </div>
     </div><!--/span-->
+
 @endsection

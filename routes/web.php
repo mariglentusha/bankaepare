@@ -18,7 +18,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $faculties = Faculty::all();
-    return view('home', compact('faculties'));
+    $notifications = DB::table('notifications')->get();
+    return view('home', compact('faculties', 'notifications'));
 })->name('home');
 
 Route::get('/faculties/{faculty}', function (Faculty $faculty) {
@@ -40,3 +41,23 @@ Route::delete('exams/{id}', 'ExamsController@destroy');
 Route::get('login', 'Auth\AuthController@redirectToProvider');
 Route::get('login/callback', 'Auth\AuthController@handleProviderCallback');
 Route::post('logout', 'Auth\AuthController@logout');
+
+Route::get('/admin', function () {
+    if (Auth::user() && Auth::user()->role == 3)
+        return view( 'admin');
+    return view('homes');
+});
+
+Route::get('/moderator', function () {
+    if (Auth::user() && Auth::user()->role == 2)
+        return view( 'moderator');
+    return view('homes');
+});
+
+Route::get('/users', function () {
+    if (Auth::user() && Auth::user()->role != 1){
+        $users = DB::table('users')->get();
+        return view( 'list', ['users' => $users]);
+    }
+});
+
