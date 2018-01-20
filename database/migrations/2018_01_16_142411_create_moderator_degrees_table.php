@@ -4,21 +4,18 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateImageGalleryTable extends Migration
+class CreateModeratorDegreesTable extends Migration
 {
     /**
      * Run the migrations.
-     *`
+     *
      * @return void
      */
     public function up()
     {
-        Schema::create('image_gallery', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('title');
-
-            $table->string('image');
-            $table->timestamps();
+        Schema::create('moderator_degrees', function (Blueprint $table) {
+            $table->integer('moderator_id');
+            $table->integer('degree_id');
         });
     }
 
@@ -29,6 +26,6 @@ class CreateImageGalleryTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('image_gallery');
+        Schema::dropIfExists('moderator_degrees');
     }
 }
