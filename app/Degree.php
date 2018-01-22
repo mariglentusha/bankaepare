@@ -1,12 +1,11 @@
 <?php
 
-namespace App;
-
+namespace App;use Laravel\Scout\Searchable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
 class Degree extends Model
-{
+{use Searchable;
     public function faculty() {
         return $this->belongsTo(Faculty::class);
     }

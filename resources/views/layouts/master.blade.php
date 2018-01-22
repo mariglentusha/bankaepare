@@ -22,6 +22,8 @@
 
     @include ('layouts.sidebar')
 
+    <!-- Scripts -->
+        <script src="{{ asset('js/app.js') }}"></script>
     <div class="content-wrapper"><!-- Main Box -->
         <div style="width: 100%;" class="container">
             <div style="margin-bottom: 60px;" class="row"></div>
